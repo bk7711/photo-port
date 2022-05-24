@@ -7,7 +7,7 @@ function Gallery(props) {
   return (
     <section>
       <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
-      <p>{currentCategory.description}</p>
+      <p>{currentCategory.name}</p>
       <PhotoList category={currentCategory.name} />
     </section>
   );
